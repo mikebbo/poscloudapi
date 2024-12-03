@@ -1,0 +1,56 @@
+1. Design and Architecture
+Technologies:
+Backend: .NET 9 (ASP.NET Core for APIs).
+Database: SQL Server for data storage.
+Frontend: React for the user interface.
+Communication: REST APIs for interaction between the backend and frontend.
+Modules:
+Authentication: Login/logout for users.
+Product Management: Add, update, delete, and view products.
+Sales: Create invoices and manage transactions.
+Reports: View sales and inventory reports.
+2. Agile Development Process
+Sprints: Each sprint is 2 weeks long.
+Scrum Meetings: Daily 15-minute meetings to discuss progress.
+Backlog: A prioritized list of tasks (features, bugs, etc.).
+Sprint Review: Demonstrate completed work at the end of the sprint.
+Example Sprint:
+Sprint Goal: Implement product management.
+
+Create APIs for product CRUD (Create, Read, Update, Delete).
+Design product list UI in React.
+Connect frontend to backend.
+3. UML Diagrams
+Use Case Diagram:
+Shows the interaction between users and the system. For a POS:
+
+Actors: Admin, Cashier.
+Use Cases: Login, Manage Products, Process Sale, View Reports.
+Class Diagram:
+Defines classes and their relationships.
+
+Classes: Product, Invoice, User, Payment.
+Relationships:
+A User has multiple Invoices.
+An Invoice contains multiple Products.
+
+User
+- UserId: int
+- Username: string
+- Password: string
+
+Product
+- ProductId: int
+- Name: string
+- Price: decimal
+- Stock: int
+
+Invoice
+- InvoiceId: int
+- Date: DateTime
+- TotalAmount: decimal
+
+Payment
+- PaymentId: int
+- InvoiceId: int
+- PaymentMethod: string
