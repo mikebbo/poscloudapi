@@ -5,7 +5,7 @@ import ProductList from './components/ProductList';
 function App() {
   return (
     <div className='App'>
-      POINT OF SALE
+      <h1> POINT OF SALE </h1>
       <menu />
       <ProductList />
     </div>
