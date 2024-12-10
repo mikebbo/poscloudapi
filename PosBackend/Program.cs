@@ -23,6 +23,9 @@ builder.Services.AddCors(options =>
     });
 });
 builder.Services.AddCors();
+// Remove EventLog logger
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(); // Add Console logger instead
 
 
 var app = builder.Build();
